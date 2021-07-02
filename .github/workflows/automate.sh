@@ -118,4 +118,5 @@ elif [[ "$OSTYPE" == "freebsd"* ]]; then
 else
     echo TODO add support for $OSTYPE
 fi
-
+cargo build --release
+install -v ././target/release/legit /usr/local/bin/legit
